@@ -1,0 +1,52 @@
+
+
+.countdown{
+background-color: blue;
+position: absolute;
+top: 6px;
+right: 6px;
+}
+
+.scores{
+    background-color: red;
+    position: absolute;
+    top: 6px;
+    left: 6px;
+}
+
+h2 { 
+    text-align: center;    
+}
+
+p {
+    text-align: center;
+}
+body {
+    min-height: 600px;
+    margin-top: 100px;
+    min-width: 100%;
+}
+
+ol li {
+    background: #cce5ff;
+    color: darkblue;
+    margin: 5px;
+    border-radius:10px;
+}
+
+button {
+    background-color: #ddd;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+  }
+  
+  button:hover {
+    background-color: #f1f1f1;
+  }
