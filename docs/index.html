@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="./assets/css/style.css">
         <title>Cuestionario de JavaScript</title>
     </head>
@@ -10,26 +11,22 @@
         <div id="body-content">
 
             <div id="header-content">
-                <span id="scores" class="scores">espan1 </span>  
-                <span id="countdown" class="countdown">timer</span>
+                <a onclick="scorePage ()" class= "scores" href="#">Puntuaciones</a>
+                <span id="countdown" class="countdown">Tiempo : 0</span>
             </div>
 
             <h2 id="title-content"></h2>
-            <div id="display-content">
-                <p id="text-cont">
-                </p>
-                <ol id="answerList"></ol>
-                <button id="startBtn" style="visibility:hidden">iniciar</button>
+            <div id="display-content" class="display-content">
+                
             </div>
 
-            <button id="wrongBtn">error</button>
-            <button id="nextBtn">siguiente</button>
-            <button id="initBtn">init</button>
+            <div id="message-box">
+                <hr>
+                <h3 id="message"></h3>                
+            </div>
     
         </div>
         <script src="./assets/js/script.js"></script>
     </body>
-    <footer>
-        <span id="message">el mensaje</span>
-    </footer>
+
 </html>
