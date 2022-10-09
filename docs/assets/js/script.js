@@ -3,7 +3,7 @@ var titleContent= document.getElementById("title-content");
 var displayContent  = document.getElementById("display-content");
 var messageText     = document.getElementById("message");
 
-
+var registered      = false;
 var scoreUser       = 0;
 var timeLeft        = 0;
 var questionIndex   = 0;
@@ -132,6 +132,7 @@ function addUser(){
     else{
         messageText.textContent ="Debe capturar sus iniciales.";
     }
+    registered = true;
     return;
 }
 
@@ -267,8 +268,10 @@ function countdown(){
         else{
             clearInterval(timeInterval);
             timerEl.textContent="Tiempo : Finalizado.";
-
-            registerPage();
+            
+            if (!registered){
+                registerPage();
+            }            
             
         }
         timeLeft --;
@@ -409,6 +412,7 @@ function startTest(){
     timeLeft = 50; 
     questionIndex = 0;
     scoreUser = 0;
+    registered = false;
 
     countdown();
     createQuestion();
