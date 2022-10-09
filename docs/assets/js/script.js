@@ -7,9 +7,7 @@ var messageText     = document.getElementById("message");
 var scoreUser       = 0;
 var timeLeft        = 0;
 var questionIndex   = 0;
-
 var localData = [];
-
 
 var questions = [
     {questionId:0,
@@ -408,7 +406,7 @@ function startTest(){
     }
     
     timerEl.textContent="";
-    timeLeft = 30; 
+    timeLeft = 50; 
     questionIndex = 0;
     scoreUser = 0;
 
